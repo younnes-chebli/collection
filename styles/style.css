@@ -3,7 +3,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    outline: red solid 3px;
 }
 
 body {
@@ -16,25 +15,37 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 body * {
     width: 70%;
 }
-h1, p {
+
+h1, h2, p {
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
 p{
     font-size: 1.5rem;
+    width: 100%;
 }
+
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/**/
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 #bubble {
@@ -46,6 +57,7 @@ header {
     flex-direction: column;
     width: 100%;
 }
+
 #header-content * {
     width: 100%;
 }
@@ -54,7 +66,70 @@ h1, #header-content p {
     text-align: center;
 }
 
+/**/
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 5rem;
+    border: 3px solid orange;
+}
+
+.card * {
+    margin-bottom: 1rem;
+}
+
+.genres, .title, .creator, .description, .links {
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.genres {
+    width: 100%;
+    display: flex;
+}
+
+.genres p {
+    width: fit-content;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    border-radius: 30%;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.creator {
+    font-size: 1rem;
+}
+
+.description {
+ font-size: 1rem;
+}
+
+.links {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+i {
+    color: white;
+}
+
+/**/
 
 @media only screen and (min-width: 767px) {
     #bubble {
@@ -74,5 +149,17 @@ h1, #header-content p {
     }
     h1 {
         margin-bottom: 0;
+    }
+
+    /**/
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 23%;
+        margin-right: 1rem;
     }
 }
