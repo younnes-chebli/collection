@@ -82,7 +82,7 @@ const collection = [
     {
         name: "La Casa de Papel",
         seasons: 5,
-        creation: "	Álex Pina",
+        creation: "Álex Pina",
         releaseYear: 2017,
         picture: "./images/casa-de-papel.jpg",
         genre: [
