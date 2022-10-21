@@ -1,5 +1,21 @@
 const collection = [
     {
+        name: "Peaky Blinders",
+        seasons: 6,
+        creation: "Steven Knight",
+        releaseYear: 2013,
+        picture: "./images/peaky-blinders.jpg",
+        genre: [
+            "Historical Fiction",
+            "Crime Drama"
+        ],
+        cast: [
+            "Cillian Murphy",
+            "Paul Anderson",
+            "Helen McCrory"
+        ]
+    },
+    {
         name: "Vikings",
         seasons: 6,
         creation: "Michael Hirst",
@@ -31,22 +47,6 @@ const collection = [
             "Bryan Cranston",
             "Aaron Paul",
             "Betsy Brandt"
-        ]
-    },
-    {
-        name: "Peaky Blinders",
-        seasons: 6,
-        creation: "Steven Knight",
-        releaseYear: 2013,
-        picture: "./images/peaky-blinders.jpg",
-        genre: [
-            "Historical Fiction",
-            "Crime Drama"
-        ],
-        cast: [
-            "Cillian Murphy",
-            "Paul Anderson",
-            "Helen McCrory"
         ]
     },
     {
