@@ -127,6 +127,25 @@ const collection = [
     }    
 ];
 
+/*
+<div class="card">
+    <img src="" alt="">
+    <div class="genres">
+        <p>genre A</p>
+        <p>genre B</p>
+    </div>
+    <h2 class="title">Title</h2>
+    <p class="creator">Creator</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere omnis, recusandae maxime enim culpa reprehenderit quo nisi, ipsum harum quae libero ratione porro cumque optio officiis esse rerum nulla?</p>
+    <div href="" class="links">
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+    </div>
+</div>
+*/
+
 for(const serie of collection) {
     
 }
