@@ -202,5 +202,18 @@ for(const serie of collection) {
     const description = document.createElement("p");
     description.classList.add("description");
     description.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere omnis, recusandae maxime enim culpa reprehenderit quo nisi, ipsum harum quae libero ratione porro cumque optio officiis esse rerum nulla?";
-    card.append(description)
+    card.append(description);
+
+    const links = document.createElement("div");
+    links.classList.add("links");
+    card.append(links);
+    const play = document.createElement("i");
+    play.classList.add("fa-solid", "fa-play");
+    const thumbsUp = document.createElement("i");
+    thumbsUp.classList.add("fa-solid", "fa-thumbs-up");
+    const plus = document.createElement("i");
+    plus.classList.add("fa-solid", "fa-plus");
+    const share = document.createElement("i");
+    share.classList.add("fa-solid", "fa-share-nodes");
+    links.append(play, thumbsUp, plus, share);
 }
