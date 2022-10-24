@@ -48,13 +48,7 @@ header {
     margin-bottom: 3rem;
 }
 
-#bubble {
-    display: none;
-}
-
 #header-content {
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
 
@@ -103,6 +97,7 @@ img {
     padding: 0.5rem;
     border-radius: 30%;
     font-size: 0.5rem;
+    background-color: deep;
 }
 
 .title {
@@ -112,6 +107,13 @@ img {
 
 .creator {
     font-size: 1rem;
+}
+
+h2.title {
+    padding-bottom: 0;
+}
+p.creator {
+    padding-top: 0;
 }
 
 .description {
@@ -141,15 +143,7 @@ footer p {
 
 /**/
 
-@media only screen and (min-width: 767px) {
-    #bubble {
-        display: initial;
-        width: 20%;
-        height: 100%;
-        background-color: orange;
-        margin-right: 1rem;
-        border-radius: 50%; 
-    }
+@media only screen and (min-width: 1200px) {
 
     header {
         flex-direction: row;

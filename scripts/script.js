@@ -67,7 +67,7 @@ const collection = [
     {
         name: "Good Doctor",
         seasons: 6,
-        developer: "David Shore (based on Park Jae-bum)",
+        creation: "David Shore (based on Park Jae-bum)",
         releaseYear: 2017,
         picture: "./images/good-doctor.jpg",
         genre: [
@@ -147,5 +147,60 @@ const collection = [
 */
 
 for(const serie of collection) {
-    
+    const card = document.createElement("div");
+    card.classList.add("card");
+    document.querySelector("main").append(card);
+
+    const img = document.createElement("img");
+    img.src = serie.picture;
+    img.alt = `Scene of ${serie.name}`;
+    card.append(img);
+
+    const genresDiv = document.createElement("div");
+    genresDiv.classList.add("genres");
+    card.append(genresDiv);
+    for(const genre of serie.genre) {
+        const p = document.createElement("p");
+        p.textContent = genre;
+        genresDiv.append(p);
+        if(genre.includes("Historical")) {
+            p.style.backgroundColor = "gray";
+        }
+        if(genre.includes("Drama")) {
+            p.style.backgroundColor = "teal";
+        }
+        if(genre.includes("Action")) {
+            p.style.backgroundColor = "chocolate";
+        }
+        if(genre.includes("War")) {
+            p.style.backgroundColor = "red";
+        }
+        if(genre.includes("Thriller")) {
+            p.style.backgroundColor = "indigo";
+        }
+        if(genre.includes("Comedy")) {
+            p.style.backgroundColor = "deepskyblue";
+        }
+        if(genre.includes("Heist")) {
+            p.style.backgroundColor = "lightcoral";
+        }
+        if(genre.includes("Horror")) {
+            p.style.backgroundColor = "purple";
+        }
+    }
+
+    const title = document.createElement("h2");
+    title.classList.add("title");
+    title.innerText = serie.name;
+    card.append(title);
+
+    const creator = document.createElement("p");
+    creator.classList.add("creator");
+    creator.innerText = `${serie.creation} - ${serie.releaseYear}`;
+    card.append(creator);
+
+    const description = document.createElement("p");
+    description.classList.add("description");
+    description.innerText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facere omnis, recusandae maxime enim culpa reprehenderit quo nisi, ipsum harum quae libero ratione porro cumque optio officiis esse rerum nulla?";
+    card.append(description)
 }
