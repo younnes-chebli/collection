@@ -80,7 +80,7 @@ main {
 }
 
 .card * {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .genres, .title, .creator, .description, .links {
@@ -98,10 +98,11 @@ img {
 
 .genres p {
     width: fit-content;
-    margin-right: 3rem;
+    margin-right: 1rem;
     margin-bottom: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 30%;
+    font-size: 0.5rem;
 }
 
 .title {
@@ -127,6 +128,15 @@ img {
 
 i {
     color: white;
+}
+
+/**/
+
+footer {
+    border-top: 5px orange solid;
+}
+footer p {
+    padding: 1rem;
 }
 
 /**/
