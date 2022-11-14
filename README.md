@@ -10,4 +10,4 @@ The goal is to summarize current knowledge of:
 
 ## For inspirations
 * [Behance](https://www.behance.net/)
-* [Dribbble] (https://dribbble.com/)
+* [Dribbble](https://dribbble.com/)
